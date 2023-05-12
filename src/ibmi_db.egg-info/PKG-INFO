@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: ibmi-db
+Version: 0.0.2
+Home-page: https://github.com/ajshedivy/idb
+Author: Adam Shedivy
+
+A package for connecting to a remote database using SSH.
