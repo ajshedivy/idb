@@ -15,7 +15,7 @@ class ServerComponent:
     @staticmethod
     def getInitCommand():
         return (
-            "java -jar /home/ASHEDIVY/.vscode/codeforiserver-1.0.0-alpha-4.jar && exit"
+            "java -jar $HOME/.vscode/codeforiserver-1.0.0-alpha-4.jar && exit"
         )
 
     @staticmethod
