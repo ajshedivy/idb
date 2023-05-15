@@ -1,12 +1,11 @@
 from typing import Any, Dict, List
 import paramiko
-from enum import Enum
 import io
 import json
 import time
 
 
-class JobStatus(Enum):
+class JobStatus:
     Ready = 1
     Busy = 2
     NOT_STARTED = 3
@@ -63,7 +62,7 @@ class SSHClient:
 class SSHChannel:
     def __init__(self, connection: paramiko.SSHClient):
         self.channel = connection.get_transport().open_session()
-        self.channel.exec_command(ServerComponent.getInitCommand() + " && exit")
+        self.channel.exec_command(ServerComponent.getInitCommand())
         self.status = JobStatus.Ready
 
     def send(self, content):

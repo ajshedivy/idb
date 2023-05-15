@@ -1,4 +1,4 @@
-from ibmi_db.client import SSHClient, SQLJob
+from ibmidb.client import SSHClient, SQLJob
 
 def main():
     connection_details = {"username": "ashedivy", "hostname": "ut24p60"}
