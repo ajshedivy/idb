@@ -61,7 +61,7 @@ Authentication is attempted in the following order of priority:
 ### Create SSHClient and SQLJob using the `CONNECTION_DETAILS`:
 
 ```python
-from ibmidb.client import SSHClient
+from ibmidb.client import SSHClient, SQLJob
 
 CONNECTION_DETAILS = {
     'hostname': 'host',
